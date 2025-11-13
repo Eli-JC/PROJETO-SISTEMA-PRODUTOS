@@ -24,7 +24,7 @@ type SnackbarState = {
 const Produtos: React.FC = () => {
   const navigate = useNavigate();
 
-  const [produtos, setProdutos] = useState<Produto[]>([]);
+  const [Produtos, setProdutos] = useState<Produto[]>([]);
   const [deletingId, setDeletingId] = useState<number | null>(null);
   const [snackbar, setSnackbar] = useState<SnackbarState>({
     open: false,

@@ -1,3 +1,4 @@
+// 1. Defina sua interface principal 'Produto'
 export interface Produto {
   id: number;
   nome: string;
@@ -6,3 +7,5 @@ export interface Produto {
   CategoriaID: number;
   Categoria: string;
 }
+
+export type NovoProduto = Omit<Produto, "id">;

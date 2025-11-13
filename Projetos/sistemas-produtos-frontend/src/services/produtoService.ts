@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { Produto } from "../types/produto.js";
+import type { Produto, NovoProduto } from "../types/produto.js";
 
 const API_BASE = "http://localhost:3333";
 
@@ -20,8 +20,13 @@ export const updateProduto = async (
   return res.data;
 };
 
+export const createProduto = async (dados: NovoProduto): Promise<Produto> => {
+  const res = await axios.post<Produto>(`${API_BASE}/produtos`, dados); // Minúsculo
+  return res.data;
+};
 export default {
   getProdutos,
   deleteProduto,
   updateProduto,
+  createProduto,
 };
