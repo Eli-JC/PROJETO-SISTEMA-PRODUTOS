@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Home from "./components/Home";
+import CadastroProduto from "./components/CadastroProduto";
 import ThemeToggleFloating from "./components/ThemeToggleFloating";
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 import { useState } from "react";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/produtos" element={<Produtos />} />
+          <Route path="/cadastroProduto" element={< CadastroProduto/>} />
         </Routes>
       </Router>
     </ThemeProvider>

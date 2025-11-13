@@ -46,7 +46,7 @@ const Home: React.FC = () => {
               color="secondary"
               fullWidth
               type="button"
-              onClick={() => navigate("/Cadastro de Produtos")}
+              onClick={() => navigate("/cadastroProduto")}
             >
              Cadastro de produtos
             </Button>

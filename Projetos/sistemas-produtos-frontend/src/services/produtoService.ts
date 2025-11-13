@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { Produto, NovoProduto } from "../types/produto.js";
 
-const API_BASE = "http://localhost:3333";
+const API_BASE = "http://localhost:3000";
 
 export const getProdutos = async (): Promise<Produto[]> => {
   const res = await axios.get<Produto[]>(`${API_BASE}/Produtos`);
